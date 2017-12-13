@@ -21,10 +21,10 @@
 
 <body>
 <!-- header section -->
-<section class="banner" role="banner">
+<section class="innerbanner" role="banner">
   <header id="header">
     <!-- navigation section  -->
-    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/logo.png" height="50" alt="Mafolio"></a>
+    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" height="50" alt="Mafolio"></a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="index.html">Home</a></li>
@@ -36,13 +36,11 @@
       <a href="#" class="nav-toggle">Menu<span></span></a> </div>
     <!-- navigation section  -->
   </header>
-
   <!-- banner text -->
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>Sareen Podhuturi</h1>
-        <p>Sophmore in Systems Engineering and Design at the University of Illinios Urbana Champaign.</p>
+      <div class="innerbanner-text text-center">
+        <p>Contact</p>
         <!-- banner text -->
       </div>
     </div>
@@ -50,70 +48,26 @@
 </section>
 <!-- header section -->
 <!-- description text section -->
-<section id="descripton" class="section descripton">
+<section id="inner-description" class="section inner-description">
   <div class="container">
     <div class="col-md-10 col-md-offset-1 text-center">
-      <p>I am currently looking for an opportunity that would help me gain real world experience in the management consulting world. I am interested in being involved with actual business scenarios where I can gain important skills.</p>
+      <p>If you liked what you saw feel free to reach out to me with the form provided below. I will try my best to get back to you by the end of the week!</p>
+      <!--contact form start-->
+      <div class="col-md-6 col-md-offset-3 conForm">
+        <div id="message"></div>
+        <form method="post" action="php/contact.php" name="cform" id="cform">
+          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
+          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
+          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea>
+          <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
+          <div id="simple-msg"></div>
+        </form>
+      </div>
+      <!--contact form end-->
     </div>
   </div>
 </section>
 <!-- description text section -->
-<!-- portfolio section -->
-<section id="works" class="works section no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/java.png" class="work-box"> <img src="images/java.png" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Proficient in Java</h5>
-            <p>Able to understand and write java classes</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/python.png" class="work-box"> <img src="images/python.png" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Proeficient in Python</h5>
-            <p>Able to use python to manipulate data</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/inventor.png" class="work-box"> <img src="images/inventor.png" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Proficient in Inventor</h5>
-            <p>Able to create and manipulate any part or assembly</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/solidworks.png" class="work-box"> <img src="images/soidworks.png" alt="">
-        <div class="overlay">
-          <div class="overlay-caption">
-            <h5>Proficient in Solidworks</h5>
-            <p>Able to create and manipulate any part or assembly</p>
-          </div>
-        </div>
-        <!-- overlay -->
-        </a> </div>
-        <!-- overlay -->
-        </a> </div>
-    </div>
-  </div>
-</section>
-<!-- portfolio section -->
-<!-- hire me section -->
-<section id="hireme" class="section hireme">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <h3>Want to see my resume?</h3>
-      <p>Click below to download an up to date pdf</p>
-      <a href="images/resume.pdf" download class="btn btn-large">Resume</a> </div>
-  </div>
-</section>
-<!-- hire me section -->
 <!-- footer -->
 <footer class="section footer">
   <div class="footer-bottom">
@@ -142,6 +96,7 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/retina.min.js"></script>
 <script src="js/modernizr.js"></script>
+<script src="js/jquery.contact.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
